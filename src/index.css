@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul,li,ol{
+  list-style: none;
+}
+
+
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+img{
+  
+  border: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body,ul,figure,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,tbody,tr,td,fieldset,legend{
+  margin:0; 
+  padding:0;
+}
+/* 公共CSS */
+
+/*清除浮动*/
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+
+
+	.label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.label>* {
+		position: absolute;
+		color:blue;
+		transform: translate(-50%, -50%);
+	}
+
+	.heatmap-canvas{display: none;}

@@ -1,0 +1,105 @@
+.wrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap .editor {
+  display: flex;
+  flex: 1;
+  padding: 50px 20px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.wrap .mind {
+  flex: 1;
+}
+
+.wrap .toolbar {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #e6f7ff;
+}
+
+.wrap .toolbar .command .anticon {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin: 0 6px;
+  padding-top: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.wrap .toolbar .disable .anticon {
+  cursor: auto;
+}
+
+.wrap .tooltip .ant-tooltip-inner {
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.wrap .itemPanel {
+  flex: 1;
+}
+
+.wrap .itemPanel .ant-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap .itemPanel .ant-card-body > div {
+  margin-bottom: 16px;
+}
+
+.wrap .contextMenu {
+  display: none;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.wrap .contextMenu .item {
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.wrap .contextMenu .item span.anticon {
+  margin-right: 8px;
+}
+
+.wrap .contextMenu .item:hover {
+  background: #e6f7ff;
+}
+
+.wrap .flow,
+.wrap .mind,
+.wrap .koni {
+  flex: 1;
+}
+
+.wrap .editorHd {
+  padding: 8px;
+}
+
+.wrap .editorSidebar, .wrap .editorContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .detailPanel {
+  flex: 1;
+  height: 100%;
+}
+
+.wrap .graph-container {
+  min-height: 300px;
+}

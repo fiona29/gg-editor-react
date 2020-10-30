@@ -1,0 +1,135 @@
+.wrap{
+	height:100%;
+	overflow: hidden;
+	// background:white;
+	
+.editor {
+		display: flex;
+		flex: 1;
+    padding: 50px 20px;
+		height: 100%;
+		flex-direction: column;
+	}
+
+	.mind {
+	  flex: 1;
+	}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #e6f7ff;
+
+    .command .anticon {
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      margin: 0 6px;
+      padding-top: 6px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        // border: 1px solid @item-active-bg;
+      }
+    }
+
+    .disable .anticon {
+    //   color: @text-color-secondary;
+      cursor: auto;
+
+      &:hover {
+        // border: 1px solid @border-color-base;
+      }
+    }
+}
+
+.tooltip {
+    .ant-tooltip-inner {
+      font-size: 12px;
+      border-radius: 0;
+    }
+}
+.itemPanel {
+  flex: 1;
+  // height: 100%;
+  
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > div {
+        margin-bottom: 16px;
+      }
+    }
+}
+
+.contextMenu {
+  display: none;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow:0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    user-select: none;
+
+    span.anticon {
+      margin-right: 8px;
+    }
+  }
+  .item:hover {
+      background:#e6f7ff;
+    }
+}
+
+.flow,
+.mind,
+.koni {
+  flex: 1;
+}
+
+.editorHd {
+  padding: 8px;
+  // background: @descriptions-bg;
+  // border: 1px solid @item-active-bg;
+}
+
+.editorSidebar,.editorContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorSidebar {
+  // background: @descriptions-bg;
+  // :global {
+  //   .g6-editor-minimap-container {
+  //     background: none !important ;
+  //   }
+  // }
+  &:first-child {
+    // border-right: 1px solid @item-active-bg;
+  }
+
+  &:last-child {
+    // border-left: 1px solid @item-active-bg;
+  }
+}
+
+.detailPanel {
+  flex: 1;
+	height: 100%;
+  // background-color: @component-background;
+}
+.graph-container{
+	min-height: 300px;
+}
+
+}
+	
